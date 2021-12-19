@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/style.css"/>-->
+        <style>
+            /* Testing CSS natively */
+            * {
+                outline: 0;
+                padding: 0;
+                margin: 0;
+                border: 0;
+            }
+        </style>
+    <!-- </head> -->
+    <body>
+        <header>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li><a>Burbank</a></li>
+                <li><a>Chicago</a></li>
+                <li><a>Dallas</a></li>
+            </ul>
+        </header>
+        <div>
+            <!--Mini header-->
+            <h2>San Jose</h2>
+            <form action="/process" method="dialog">
+                <label for="temp">show temperature in </label>
+                <select name="temp" id="temp">
+                    <option value="degrees-c">°C</option>
+                    <option value="degrees-f">°F</option>
+                </select>
+            </form>
+            <div><!--Black line--></div>
+        </div>
+        <div>
+            <!--4 days-->
+            <div>
+                <!--Day 1-->
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="Some Rain">
+                <p>some rain</p>
+                <div>
+                    <h4><span>24</span>°</h4>
+                    <h4><span>18</span>°</h4>
+                </div>
+            </div>
+            <div>
+                <!--Day 2-->
+                <h3>Tomorrow</h3>
+                <img src="images/some_sun.png" alt="Some Sun">
+                <p>some sun</p>
+                <div>
+                    <h4><span>27</span>°</h4>
+                    <h4><span>19</span>°</h4>
+                </div>
+            </div>
+            <div>
+                <!--Day 3-->
+                <h3>Friday</h3>
+                <img src="images/some_clouds.png" alt="Some clouds">
+                <p>some clouds</p>
+                <div>
+                    <h4><span>21</span>°</h4>
+                    <h4><span>16</span>°</h4>
+                </div>
+            </div>
+            <div>
+                <!--Day 4-->
+                <h3>Saturday</h3>
+                <img src="images/some_sun.png" alt="Some Sun">
+                <p>some sun</p>
+                <div>
+                    <h4><span>26</span>°</h4>
+                    <h4><span>21</span>°</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!--Alert, removable with JS-->
+            <img src="images/cookie.png" alt="Cookie">
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and 
+                    ads, to provide social media features and to analyse our 
+                    traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button>I Accept</button>
+        </div>
+        <!--<script src="js/script.js"></script>-->
+        <script>
+            //Testing JavaScript natively
+            console.log("Hello World");
+        </script>
+    </body>
+</html>
