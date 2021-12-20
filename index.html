@@ -5,17 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather Forecast</title>
-        <!--<link rel="stylesheet" type="text/css" href="css/style.css"/>-->
-        <style>
-            /* Testing CSS natively */
-            * {
-                outline: 0;
-                padding: 0;
-                margin: 0;
-                border: 0;
-            }
-        </style>
-    <!-- </head> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
     <body>
         <header>
             <h1>DojoWeather</h1>
@@ -26,61 +17,62 @@
             </ul>
         </header>
         <div>
-            <!--Mini header-->
-            <h2>San Jose</h2>
-            <form action="/process" method="dialog">
-                <label for="temp">show temperature in </label>
-                <select name="temp" id="temp">
-                    <option value="degrees-c">°C</option>
-                    <option value="degrees-f">°F</option>
-                </select>
-            </form>
-            <div><!--Black line--></div>
+            <div class="title-section">
+                <h2>San Jose</h2>
+                <form action="/process" method="dialog">
+                    <label for="temp">show temperature in </label>
+                    <select name="temp" id="temp">
+                        <option value="degrees-c">°C</option>
+                        <option value="degrees-f">°F</option>
+                    </select>
+                </form>
+            </div>
+            <div id="black-line"><!--Black line--></div>
         </div>
-        <div>
+        <div class="reports">
             <!--4 days-->
-            <div>
+            <div class="day-report">
                 <!--Day 1-->
                 <h3>Today</h3>
-                <img src="images/some_rain.png" alt="Some Rain">
+                <img src="images/some_rain.png" alt="Some Rain" class="weather-icon">
                 <p>some rain</p>
                 <div>
-                    <h4><span>24</span>°</h4>
-                    <h4><span>18</span>°</h4>
+                    <h4 class="hot"><span>24</span>°</h4>
+                    <h4 class="cold"><span>18</span>°</h4>
                 </div>
             </div>
-            <div>
+            <div class="day-report">
                 <!--Day 2-->
                 <h3>Tomorrow</h3>
-                <img src="images/some_sun.png" alt="Some Sun">
+                <img src="images/some_sun.png" alt="Some Sun" class="weather-icon">
                 <p>some sun</p>
                 <div>
-                    <h4><span>27</span>°</h4>
-                    <h4><span>19</span>°</h4>
+                    <h4 class="hot"><span>27</span>°</h4>
+                    <h4 class="cold"><span>19</span>°</h4>
                 </div>
             </div>
-            <div>
+            <div class="day-report">
                 <!--Day 3-->
                 <h3>Friday</h3>
-                <img src="images/some_clouds.png" alt="Some clouds">
+                <img src="images/some_clouds.png" alt="Some clouds" class="weather-icon">
                 <p>some clouds</p>
                 <div>
-                    <h4><span>21</span>°</h4>
-                    <h4><span>16</span>°</h4>
+                    <h4 class="hot"><span>21</span>°</h4>
+                    <h4 class="cold"><span>16</span>°</h4>
                 </div>
             </div>
-            <div>
+            <div class="day-report">
                 <!--Day 4-->
                 <h3>Saturday</h3>
-                <img src="images/some_sun.png" alt="Some Sun">
+                <img src="images/some_sun.png" alt="Some Sun" class="weather-icon">
                 <p>some sun</p>
                 <div>
-                    <h4><span>26</span>°</h4>
-                    <h4><span>21</span>°</h4>
+                    <h4 class="hot"><span>26</span>°</h4>
+                    <h4 class="cold"><span>21</span>°</h4>
                 </div>
             </div>
         </div>
-        <div>
+        <div id="alert">
             <!--Alert, removable with JS-->
             <img src="images/cookie.png" alt="Cookie">
             <div>
